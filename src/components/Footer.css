@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: var(--bg-primary); /* Use theme background */
+}
+
+.footer-text {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-900);
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 16px; /* Slightly smaller for mobile if needed, but 20px was in Figma */
+  }
+}

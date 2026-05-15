@@ -1,0 +1,199 @@
+.search-filter-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-white);
+}
+
+.search-filter-page .main-content {
+  flex: 1;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-btn {
+  color: var(--primary-900);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary-900);
+}
+
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.search-query-display {
+  background-color: var(--bg-white);
+  border: 1px solid var(--primary-900);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.query-text {
+  font-size: 16px;
+  color: var(--text-sub);
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-900);
+}
+
+.filter-options.flex {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-options.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.filter-chip {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid var(--text-sub);
+  color: var(--text-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.filter-chip.selected {
+  background-color: var(--bg-primary);
+  border-color: var(--primary-700);
+  color: var(--primary-700);
+}
+
+.year-range-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.year-slider-bar {
+  position: relative;
+  height: 12px;
+  background-color: var(--primary-600);
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.year-slider-track {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: var(--primary-900);
+  border-radius: 6px;
+}
+
+.year-slider-handle {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: var(--bg-white);
+  border: 2px solid var(--primary-900);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.year-slider-handle.start {
+  left: 0%;
+}
+
+.year-slider-handle.end {
+  left: 80%;
+}
+
+.year-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.year-label-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.year-label-group.align-right {
+  align-items: flex-end;
+}
+
+.year-label-type {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-900);
+  opacity: 0.8;
+}
+
+.year-label-value {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-900);
+}
+
+.filter-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-bottom: 40px;
+}
+
+.footer-btn {
+  flex: 1;
+  height: 56px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn {
+  background-color: var(--bg-primary);
+  color: var(--text-sub);
+}
+
+.apply-btn {
+  background-color: var(--primary-900);
+  color: var(--text-white);
+}

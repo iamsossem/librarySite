@@ -1,0 +1,82 @@
+:root {
+  /* Primary Colors - Deep Green */
+  --primary-900: #003733;
+  --primary-800: #002A28;
+  --primary-700: #004D40;
+  
+  /* Secondary Colors - Point/Status */
+  --secondary-600: #E87B00; /* Available Status / Point Color */
+  
+  /* Semantic Colors */
+  --error: #B3261E; /* Unavailable Status */
+  
+  /* Background & Surface */
+  --bg-primary: #E6EDED;
+  --bg-white: #FFFFFF;
+  
+  /* Text Colors */
+  --text-main: #00201E;
+  --text-sub: #33716D;
+  --text-white: #FFFFFF;
+
+  /* Effects & Radius */
+  --radius-md: 8px;
+  --shadow-sm: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  /* Typography Hierarchy */
+  --font-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+/* Base Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  font-size: 16px; /* PRD 권장 최소 폰트 사이즈 */
+}
+
+/* Accessibility: Touch Area */
+button, a, input, [role="button"] {
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Accessibility: Visually Hidden for Screen Readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 480px; /* Mobile First/Centralized */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

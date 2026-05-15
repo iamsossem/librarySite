@@ -1,0 +1,49 @@
+.quick-menu {
+  margin-bottom: 32px;
+}
+
+.quick-menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.quick-menu-item {
+  flex: 1;
+}
+
+.quick-menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
+}
+
+.quick-menu-button:hover .icon-circle {
+  transform: translateY(-4px);
+}
+
+.icon-text {
+  font-size: 24px;
+}
+
+.menu-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-900);
+  letter-spacing: -0.32px;
+}

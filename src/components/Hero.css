@@ -1,0 +1,182 @@
+.hero-section {
+  position: relative;
+  /* padding-bottom: 64px; */
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 320px; /* Slightly taller for search bar */
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* Lighter overlay to show building better */
+}
+
+/* Search Bar Styles */
+.hero-search-container {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 3;
+}
+
+.hero-search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--primary-100);
+}
+
+.hero-search-input {
+  flex: 1;
+  border: none;
+  font-size: 18px;
+  padding: 12px 0;
+  outline: none;
+  color: var(--primary-900);
+}
+
+.hero-search-input::placeholder {
+  color: #94a3b8;
+}
+
+.search-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.search-icon-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  font-size: 20px;
+  transition: background-color 0.2s;
+}
+
+.search-icon-btn:hover {
+  background-color: #f8fafc;
+}
+
+.find-btn {
+  background-color: white;
+}
+
+/* Deeper Overlap for Card */
+.hero-card-container {
+  position: relative;
+  z-index: 2;
+  margin-top: -150px; /* Moves container up and pulls subsequent elements with it */
+  padding: 0 16px;
+}
+
+.hero-floating-card {
+  position: relative;
+  top: -100px;
+  background-color: rgba(230, 237, 237, 0.95); /* Slightly transparent for glass effect if needed */
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.hero-text-content {
+  margin-bottom: 32px;
+}
+
+.hero-main-title {
+  font-size: 36px; /* Slightly larger for impact */
+  font-weight: 800;
+  color: var(--primary-900);
+  line-height: 1.3;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.hero-sub-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-900);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.library-view-button {
+  background-color: var(--primary-900);
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 55, 51, 0.3);
+  transition: all 0.2s ease;
+  height: auto;
+  min-height: 52px;
+}
+
+.library-view-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 16px rgba(0, 55, 51, 0.4);
+}
+
+.hero-quick-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.hero-grid-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  height: 140px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.hero-grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-200);
+}
+
+.grid-icon {
+  font-size: 36px;
+}
+
+.grid-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-900);
+  letter-spacing: -0.01em;
+  text-align: center;
+}

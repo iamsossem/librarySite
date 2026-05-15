@@ -1,0 +1,132 @@
+.book-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.book-cover-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 370 / 334;
+}
+
+.book-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge-top {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-white);
+  box-shadow: var(--shadow-sm);
+  z-index: 1;
+}
+
+.status-badge-top.available {
+  background-color: var(--secondary-600);
+}
+
+.status-badge-top.unavailable {
+  background-color: var(--error);
+}
+
+.book-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-category {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-main);
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.book-author {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-sub);
+  font-family: var(--font-secondary);
+}
+
+.book-status-row {
+  display: flex;
+  align-items: center;
+}
+
+.status-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.status-label.available {
+  color: var(--secondary-600);
+}
+
+.status-label.unavailable {
+  color: var(--error);
+}
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.action-btn {
+  flex: 1;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.action-btn.primary-btn {
+  background-color: var(--primary-900);
+  color: var(--text-white);
+}
+
+.action-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.action-btn:disabled {
+  background-color: var(--bg-primary);
+  color: var(--text-sub);
+  cursor: not-allowed;
+}
